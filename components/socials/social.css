@@ -1,0 +1,23 @@
+/* social.css */
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  > a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Custom styles for different components */
+.socials-navbar {
+  color: #ffffff;
+}
+
+.socials-header {
+  color: #555556;
+}
+
+.socials-footer {
+  color: #ffffff;
+}

@@ -1,0 +1,100 @@
+.contact_container {
+  position: relative;
+  width: 45%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  color: #555556;
+  margin: 20rem auto 2rem auto;
+}
+
+.loader_container,
+.message_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.message_container {
+  color: green;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact_apps {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact_me {
+  background: black;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #ffffff;
+}
+
+.contact_me:hover {
+  background-color: #111111;
+}
+
+.contact_icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact_api {
+  font-size: 0.9rem;
+}
+
+.contact_form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: black;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.contact_input_field {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* ====================MEDIA QUERY MD================= */
+
+@media screen and (max-width: 1024px) {
+  .contact_container {
+    width: 85%;
+  }
+}
+
+/* ====================MEDIA QUERY SM================= */
+
+@media screen and (max-width: 600px) {
+  .contact_container {
+    grid-template-columns: 1fr;
+    gap: 3%;
+    width: 100%;
+    padding: 1rem;
+
+    margin: 15rem auto 3rem auto;
+
+    .contact_form > button {
+      margin: 2rem;
+    }
+  }
+}

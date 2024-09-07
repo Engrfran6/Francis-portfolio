@@ -18,9 +18,16 @@
       }
     ],
     "paths": {
-      "<pageroutes>/*": ["./*"]
+      "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/about/About.jsx",
+    "components/about/About.jsx"
+  ],
   "exclude": ["node_modules"]
 }

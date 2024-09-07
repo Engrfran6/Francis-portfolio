@@ -1,0 +1,230 @@
+.about_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1rem;
+  width: 90%;
+  /* margin: 0 auto; */
+
+  .about_me > h2,
+  .communities > h2,
+  .tech_journey > h2,
+  .hobbies > h2 {
+    font-size: 1.8rem;
+  }
+
+  /* .about_me-text > p,
+  .communities > p,
+  .tech_journey > p,
+  .hobbies > p {
+    color: #555556;
+  } */
+
+  .about_me-text {
+    > p button {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.about_card {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 25.5rem;
+}
+
+.highlight {
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .profile_image {
+      width: 7rem;
+      height: 8rem;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit: contain;
+      }
+    }
+
+    > ul li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #ffffff;
+    }
+  }
+
+  .profile > ul,
+  .project_deployed > div > p {
+    font-size: 0.9rem;
+  }
+
+  .project_deployed {
+    display: flex;
+    gap: 1rem;
+
+    .years_of-experience,
+    .projects_completed {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      margin-top: 1.3rem;
+      background-color: #111111;
+      /* color: #555556; */
+
+      > span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .position_description {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-top: 1.3rem;
+    background-color: #111111;
+    /* color: #555556; */
+  }
+}
+
+.favourite_tools,
+.highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .favourite > ul > li > img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .favourite > ul,
+  .connect_links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+
+    > li,
+    li > a {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+    }
+  }
+
+  .connect_links > ul > li {
+    padding: 0.3rem 0.7rem;
+    background-color: #111111;
+    border-radius: 0.3rem;
+  }
+}
+
+.highlight,
+.favourite_tools,
+.key_skills {
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 3rem 1rem 1rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  .highlight_heading,
+  .favourite_heading,
+  .connect_link-heading,
+  .key_skills-heading {
+    font-size: 1.7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+    margin-bottom: 0.8rem;
+  }
+}
+
+.highlight,
+.favourite_tools {
+  width: 44%;
+}
+
+.key_skills {
+  width: 100%;
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-left: 1.5rem;
+
+    > li {
+      padding: 0.3rem 0.5rem;
+      background-color: #111111;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      list-style-type: disc;
+    }
+
+    > li::marker {
+      /* color: #ffffff; */
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about_container {
+    gap: 1.9rem;
+    padding: 1rem;
+    /* margin: 3rem auto; */
+    width: 100%;
+
+    .about_me > h2,
+    .communities > h2,
+    .tech_journey > h2,
+    .hobbies > h2 {
+      font-size: 1.9rem;
+    }
+
+    .about_content {
+      gap: 3rem;
+    }
+
+    .about_card {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 1rem;
+      height: max-content;
+    }
+
+    .highlight,
+    .favourite_tools {
+      width: 100%;
+
+      .favourite > ul > li > img {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+    }
+
+    .favourite_tools {
+      gap: 2.5rem;
+    }
+  }
+}
