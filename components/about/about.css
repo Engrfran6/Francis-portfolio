@@ -4,27 +4,12 @@
   gap: 2.5rem;
   padding: 1rem;
   width: 90%;
-  /* margin: 0 auto; */
 
   .about_me > h2,
   .communities > h2,
   .tech_journey > h2,
   .hobbies > h2 {
     font-size: 1.8rem;
-  }
-
-  /* .about_me-text > p,
-  .communities > p,
-  .tech_journey > p,
-  .hobbies > p {
-    color: #555556;
-  } */
-
-  .about_me-text {
-    > p button {
-      text-decoration: underline;
-      color: inherit;
-    }
   }
 }
 
@@ -187,7 +172,7 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .about_container {
     gap: 1.9rem;
     padding: 1rem;

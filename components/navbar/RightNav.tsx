@@ -11,6 +11,7 @@ const MenuList = styled.div<StateProps>`
   background-color: black;
   z-index: 1000;
   position: relative;
+  gap: 0;
 
   & h1,
   .action {
@@ -54,6 +55,11 @@ const MenuList = styled.div<StateProps>`
     height: 100vh;
     width: 85%;
     transition: transform 0.3s ease-in-out;
+
+    .active::after {
+      bottom: 7px;
+      left: 125%;
+    }
   }
 `;
 

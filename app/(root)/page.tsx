@@ -15,12 +15,20 @@ const Home = () => {
     <main
       className="relative mx-auto
        flex flex-col justify-center items-center verflow-hidden">
-      <section className="max-w-7xl w-full flex flex-col items-center justify-center h-[70vh] md:h-[100vh] ">
+      <section className="relative flex flex-col items-center justify-center h-[70vh] pt-8 md:h-[95vh] w-full ">
+        <div
+          className="md:h-[95vh] w-full dark:bg-[#111111] bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center">
+          <div
+            className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#101010]
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          />
+        </div>
         <Hero />
       </section>
 
       <section
-        className="flex flex-col justify-center items-center gap-10   py-12 w-[100%] mx-auto sm:px-10 px-5 bg-black-100"
+        className="flex flex-col justify-center items-center gap-10   py-12 w-[100%] mx-auto sm:px-10 px-5 bg-[#000000]"
         style={{borderTop: '1px solid #3d3e41', borderBottom: '1px solid #3d3e41'}}>
         <h1 className="heading">
           Favourite <span className="text-purple"> Tools</span>

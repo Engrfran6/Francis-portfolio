@@ -37,7 +37,7 @@ const BottomNavbar: React.FC = () => {
       break;
   }
   return (
-    <nav className="bg-black fixed top-0 w-full h-max pt-3 border-b border-b-[rgba(255,255,255,0.125)] z-[1000]">
+    <nav className="bg-black fixed top-0 w-full h-max pt-5 border-b border-b-[rgba(255,255,255,0.125)] z-[1000]">
       <div className="flex justify-between md:justify-evenly items-center w-screen pl-4 font-semibold">
         <div className="block md:hidden">
           <Socials className="socials-navbar" />
@@ -68,7 +68,7 @@ const BottomNavbar: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 pb-[2rem] md:pb-[2.5rem] pt-[5rem] md:pt-[5.5rem]">
-        <h1 className="heading text-sm">{heading}</h1>
+        <h1 className="heading px-3">{heading}</h1>
         <div className="bg-purple w-20 h-2 rounded-full mt-2"></div>
       </div>
     </nav>

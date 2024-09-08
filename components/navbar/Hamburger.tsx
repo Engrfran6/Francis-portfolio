@@ -10,8 +10,8 @@ const StyledBurger = styled.div<StateProps>`
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
+  top: 1;
+  right: 15px;
   z-index: 1000;
   display: none;
 

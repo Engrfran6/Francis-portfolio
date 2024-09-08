@@ -32,7 +32,7 @@ export default function About() {
     numberOfYears -= 1;
   }
 
-  const projectsCompleted = projectList.length + 10;
+  const projectsCompleted = projectList.length + 30;
 
   const [isReadMore, setIsReadMore] = useState(false);
   const containerRef = useRef(null);
