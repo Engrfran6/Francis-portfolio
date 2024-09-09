@@ -97,6 +97,6 @@ h6 {
   }
 
   .sub_heading {
-    @apply font-bold text-3xl md:text-4xl;
+    /* @apply font-bold text-3xl md:text-4xl; */
   }
 }

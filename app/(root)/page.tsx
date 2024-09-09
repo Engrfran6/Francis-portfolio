@@ -15,9 +15,9 @@ const Home = () => {
     <main
       className="relative mx-auto
        flex flex-col justify-center items-center verflow-hidden">
-      <section className="relative flex flex-col items-center justify-center h-[70vh] pt-8 md:h-[95vh] w-full ">
+      <section className="relative flex flex-col items-center justify-center h-[95vh] pt-8 w-full ">
         <div
-          className="md:h-[95vh] w-full dark:bg-[#111111] bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+          className="h-[95vh] w-full dark:bg-[#111111] bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center">
           <div
             className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#101010]
@@ -46,7 +46,7 @@ const Home = () => {
           Projects <span className="text-purple"> Completed</span>
         </h1>
         <div className="flex flex-col gap-20 md:gap-16 ">
-          {projectList?.slice(0, 7).map((project: ProjectCardProps, index) => (
+          {projectList?.slice(0, 4).map((project: ProjectCardProps, index) => (
             <ProjectCard key={`p_${index}`} {...project} index={index} />
           ))}
         </div>

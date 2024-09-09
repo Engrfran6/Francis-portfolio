@@ -65,19 +65,19 @@ export default function ProjectCard({
               className={`card_description-title ${
                 pathname === '/portfolio' ? 'card_description-title-grid' : ''
               }`.trim()}>
-              <span>
+              <span className="description_readingtime">
                 <MdAccessTime />
                 {readingTime} min read
               </span>
-              <h2>{title}</h2>
+              <h2 className="description_heading">{title}</h2>
               <div className="card_description-underline"></div>
             </div>
             <div
               className={`card_description-text ${
                 pathname === '/portfolio' ? 'card_description-text-grid' : ''
               }`.trim()}>
-              <p>{description?.slice(0, 150)}...</p>
-              <h4>{tech}</h4>
+              <p className="card_description-p">{description?.slice(0, 150)}...</p>
+              <h4 className="card_description-tech">{tech}</h4>
               <CustomLink
                 className="btn"
                 href={`portfolio/${title}`}

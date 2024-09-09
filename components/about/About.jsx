@@ -62,7 +62,7 @@ export default function About() {
   return (
     <section className="about_container">
       <div className="about_me">
-        <h2 className="sub_heading">
+        <h2 className="about_heading">
           About <span className="text-purple">me</span>
         </h2>
         <div className="about_content">
@@ -89,6 +89,7 @@ export default function About() {
               <div className="profile">
                 <div className="profile_image">
                   <Image
+                    className="profile_image-img"
                     src={ME}
                     width={500}
                     height={500}
@@ -98,16 +99,16 @@ export default function About() {
                     alt="Picture of Francis Uloho Okpoluaefe _ Frontent Developer"
                   />
                 </div>
-                <ul>
-                  <li>
+                <ul className="highlight_list">
+                  <li className="highlight_listitems">
                     <FaRegStar />
                     <span>Front-End Developer</span>
                   </li>
-                  <li>
+                  <li className="highlight_listitems">
                     <SlLocationPin />
                     <span>PortHacourt, NG</span>
                   </li>
-                  <li>
+                  <li className="highlight_listitems">
                     <RiHomeOfficeLine />
                     <span>Franlancer</span>
                   </li>
@@ -116,30 +117,35 @@ export default function About() {
 
               <div className="project_deployed">
                 <div className="years_of-experience">
-                  <span>{numberOfYears}+</span>
-                  <p>Years of experience</p>
+                  <span className="years_of-experience-span">{numberOfYears}+</span>
+                  <p className="project_deployed-text">Years of experience</p>
                 </div>
                 <div className="projects_completed">
-                  <span>{projectsCompleted}+</span>
-                  <p>Projects Completed</p>
+                  <span className="projects_completed-span">{projectsCompleted}+</span>
+                  <p className="project_deployed-text">Projects Completed</p>
                 </div>
               </div>
-
-              <div className="position_description">
-                <p>Fullstack experience (frontend heavy)</p>
-              </div>
+              <p className="position_description">Fullstack experience (frontend heavy)</p>
             </div>
 
             <div className="favourite_tools">
               <div className="favourite">
                 <h2 className="favourite_heading">Favourite tools</h2>
-                <ul>
-                  <li>
-                    <Image width={40} height={40} alt="ReactJs" src={ReactJs} title="ReactJs" />
+                <ul className="favourite_list">
+                  <li className="favourite_listitems">
+                    <Image
+                      className="favourite_image"
+                      width={40}
+                      height={40}
+                      alt="ReactJs"
+                      src={ReactJs}
+                      title="ReactJs"
+                    />
                     <span>ReactJS</span>
                   </li>
-                  <li>
+                  <li className="favourite_listitems">
                     <Image
+                      className="favourite_image"
                       width={40}
                       height={40}
                       alt="Typescript"
@@ -148,20 +154,37 @@ export default function About() {
                     />
                     <span> Typescript</span>
                   </li>
-                  <li>
-                    <Image width={40} height={40} alt="Figma" src={Figma} title="Figma" />
+                  <li className="favourite_listitems">
+                    <Image
+                      className="favourite_image"
+                      width={40}
+                      height={40}
+                      alt="Figma"
+                      src={Figma}
+                      title="Figma"
+                    />
                   </li>
 
-                  <li>
-                    <Image width={40} height={40} alt="NextJS" src={NextJs} title="NextJS" />
+                  <li className="favourite_listitems">
+                    <Image
+                      className="favourite_image"
+                      width={70}
+                      height={70}
+                      alt="NextJS"
+                      src={NextJs}
+                      title="NextJS"
+                    />
                     <span> NextJs</span>
                   </li>
-                  <li>
-                    <Image width={70} height={70} alt="NextJS" src={NextJs2} title="NextJS" />
-                    <span> NextJs</span>
-                  </li>
-                  <li>
-                    <Image width={40} height={40} alt="NodeJS" src={NodeJs} title="NodeJS" />
+                  <li className="favourite_listitems">
+                    <Image
+                      className="favourite_image"
+                      width={40}
+                      height={40}
+                      alt="NodeJS"
+                      src={NodeJs}
+                      title="NodeJS"
+                    />
                     <span> NodeJS </span>
                   </li>
                 </ul>
@@ -169,9 +192,10 @@ export default function About() {
 
               <div className="connect_links">
                 <h2 className="connect_link-heading">Connect</h2>
-                <ul>
-                  <li>
+                <ul className="connect_links-list">
+                  <li className="connect_links-listitems">
                     <a
+                      className="connect_links-listitems-a"
                       href="https://github.com/Engrfran6"
                       target="_blank"
                       rel="noopener noreferrer">
@@ -179,8 +203,9 @@ export default function About() {
                       <span>Email</span>
                     </a>
                   </li>
-                  <li>
+                  <li className="connect_links-listitems">
                     <a
+                      className="connect_links-listitems-a"
                       href="https://linkedin.com/in/deulo"
                       target="_blank"
                       rel="noopener noreferrer">
@@ -188,8 +213,9 @@ export default function About() {
                       <span>Linkedin </span>
                     </a>
                   </li>
-                  <li>
+                  <li className="connect_links-listitems">
                     <a
+                      className="connect_links-listitems-a"
                       href="https://github.com/Engrfran6"
                       target="_blank"
                       rel="noopener noreferrer">
@@ -197,8 +223,12 @@ export default function About() {
                       <span> GitHub</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="https://x.com/deulodev" target="_blank" rel="noopener noreferrer">
+                  <li className="connect_links-listitems">
+                    <a
+                      className="connect_links-listitems-a"
+                      href="https://x.com/deulodev"
+                      target="_blank"
+                      rel="noopener noreferrer">
                       <BsTwitterX />
                       <span> Twitter </span>
                     </a>
@@ -209,18 +239,28 @@ export default function About() {
           </div>
 
           <div className="key_skills">
-            <h2 className="key_skills-heading">Key Skills</h2>
-            <ul>
-              <li>Front-End Development: React, Next.js, Redux, Recoil, JavaScript, HTML5, CSS3</li>
-              <li>Back-End Development: Node.js, Express.js, Firebase, Appwrite </li>
-              <li>Design Frameworks: Tailwind CSS, Bootstrap, Vanilla CSS, Styled Components</li>
-              <li>Version Control: Git, GitFlow</li>
-              <li>Responsive Design: Mobile-first approach, cross-browser compatibility</li>
-              <li>
+            <h2 className="key_skills-heading ">
+              Key <span className="text-purple">Skills</span>
+            </h2>
+            <ul className="key_skills-list">
+              <li className="key_skills-listitems">
+                Front-End Development: React, Next.js, Redux, Recoil, JavaScript, HTML5, CSS3
+              </li>
+              <li className="key_skills-listitems">
+                Back-End Development: Node.js, Express.js, Firebase, Appwrite{' '}
+              </li>
+              <li className="key_skills-listitems">
+                Design Frameworks: Tailwind CSS, Bootstrap, Vanilla CSS, Styled Components
+              </li>
+              <li className="key_skills-listitems">Version Control: Git, GitFlow</li>
+              <li className="key_skills-listitems">
+                Responsive Design: Mobile-first approach, cross-browser compatibility
+              </li>
+              <li className="key_skills-listitems">
                 Certifications: Front-End Developer Professional Certificate from Meta And Front-End
                 Developer (React) Certificate from HackerRank
               </li>
-              <li>Collaborative Tools: GitHub, Jira, Slack</li>
+              <li className="key_skills-listitems">Collaborative Tools: GitHub, Jira, Slack</li>
             </ul>
           </div>
         </div>
@@ -228,7 +268,7 @@ export default function About() {
 
       {/* ==============================coming soon=============================== */}
       <div className="communities">
-        <h2 className="sub_heading">
+        <h2 className="community_heading">
           Com<span className="text-purple">munities</span>
         </h2>
 
@@ -257,7 +297,7 @@ export default function About() {
       {/* ==============================coming soon=============================== */}
 
       <div className="tech_journey">
-        <h2 className="sub_heading">
+        <h2 className="journey_heading ">
           Jour<span className="text-purple">ney</span>
         </h2>
         <p>COMING SOON!</p>
@@ -290,7 +330,7 @@ export default function About() {
       </div>
 
       <div className="hobbies">
-        <h2 className="sub_heading">
+        <h2 className="hobbies_heading">
           Ho<span className="text-purple">bbies</span>
         </h2>
         <p>

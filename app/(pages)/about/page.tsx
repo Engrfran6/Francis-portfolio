@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <section className="relative flex flex-col md:py-12 verflow-hidden">
-      <section className="w-100 md:w-1/2  mx-auto  pb-10 pt-[14rem] md:pt-[18.5rem]">
+    <section className="flex flex-col verflow-hidden">
+      <section className="w-100 md:w-1/2  mx-auto  pb-10 pt-[1rem] md:pt-[4.5rem]">
         <About />
       </section>
     </section>
