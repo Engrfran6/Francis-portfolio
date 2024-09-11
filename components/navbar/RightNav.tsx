@@ -46,7 +46,7 @@ const MenuList = styled.div<StateProps>`
     border-radius: 50%;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     position: fixed;
     flex-flow: column nowrap;
     transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(120%)')};
