@@ -79,17 +79,25 @@ export default function About() {
                   {aboutMe.about.paragragh4}
                 </p>
               )}
-              <button onClick={toggleReadMore}>{isReadMore ? 'Red Less' : 'Read More'}</button>
+              <button
+                onClick={toggleReadMore}
+                style={{
+                  color: isReadMore === 'Read More' || 'Read Less' ? 'purple' : '',
+                  textDecoration: 'underline',
+                  padding: '0 0.3rem',
+                }}>
+                {isReadMore ? 'Red Less' : 'Read More'}
+              </button>
             </p>
           </div>
 
           <div className="about_card">
             <div className="highlight">
               <h2 className="highlight_heading">Highlights</h2>
-              <div className="profile">
-                <div className="profile_image">
+              <div className="highlight_profile">
+                <div className="highlight_profile-image">
                   <Image
-                    className="profile_image-img"
+                    className="highlight_profile_image-img"
                     src={ME}
                     width={500}
                     height={500}
@@ -115,14 +123,14 @@ export default function About() {
                 </ul>
               </div>
 
-              <div className="project_deployed">
+              <div className="highlight_project">
                 <div className="years_of-experience">
                   <span className="years_of-experience-span">{numberOfYears}+</span>
-                  <p className="project_deployed-text">Years of experience</p>
+                  <p className="highlight_project-deployed_text">Years of experience</p>
                 </div>
                 <div className="projects_completed">
                   <span className="projects_completed-span">{projectsCompleted}+</span>
-                  <p className="project_deployed-text">Projects Completed</p>
+                  <p className="highlight_project-deployed_text">Projects Completed</p>
                 </div>
               </div>
               <p className="position_description">Fullstack experience (frontend heavy)</p>

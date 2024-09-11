@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <section className="flex flex-col verflow-hidden">
-      <section className="w-100 md:w-1/2  mx-auto  pb-10 pt-[1rem] md:pt-[4.5rem]">
+      <section className="w-[100%] md:w-[90%] lg:w-1/2  mx-auto  pb-10 pt-[1rem] md:pt-[4.5rem]">
         <About />
       </section>
     </section>

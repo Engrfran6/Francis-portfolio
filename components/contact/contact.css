@@ -4,8 +4,7 @@
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
-  color: #555556;
-  margin: 20rem auto 2rem auto;
+  margin: 2rem auto;
 }
 
 .loader_container,
@@ -74,6 +73,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.contact_form > button {
+  margin: 1.3rem;
+}
+
 /* ====================MEDIA QUERY MD================= */
 
 @media screen and (max-width: 1024px) {
@@ -84,17 +87,12 @@
 
 /* ====================MEDIA QUERY SM================= */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .contact_container {
     grid-template-columns: 1fr;
     gap: 3%;
     width: 100%;
     padding: 1rem;
-
-    margin: 15rem auto 3rem auto;
-
-    .contact_form > button {
-      margin: 2rem;
-    }
+    margin: 1.7rem auto 3rem auto;
   }
 }

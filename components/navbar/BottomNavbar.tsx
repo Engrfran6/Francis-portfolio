@@ -81,16 +81,16 @@ const BottomNavbar: React.FC = () => {
       className={`flex flex-col gap-12 md:gap-16 bg-black sticky  w-full border-b border-b-[rgba(255,255,255,0.125)] z-[1000] pb-[2rem] pt-5 transition-all duration-300 ease-in-out ${
         isScrolled ? 'top-[-8%] md:top-[-10%]  text-[0.3rem] md:text-[0.2rem]' : ''
       }`}>
-      <div className="flex justify-between md:justify-evenly items-center w-screen pl-4 font-semibold">
+      <div className="flex justify-between md:justify-evenly items-center w-[100%] pl-4 font-semibold">
         <div className="block md:hidden">
           <Socials otherClassName="text-white" />
         </div>
-        <RightNav open={open} setOpen={setOpen} /> {/* Pass both open and setOpen */}
-        <Hamburger open={open} setOpen={setOpen} /> {/* Pass both open and setOpen */}
+        <RightNav open={open} setOpen={setOpen} />
+        <Hamburger open={open} setOpen={setOpen} />
         <div className="items-center gap-12 hidden md:flex">
           <Socials otherClassName=" text-white" />
 
-          <div className="flex gap-2">
+          <div className="md:hidden lg:flex gap-2">
             <CustomLink
               className="btn btn_nav-call"
               href="https://calendly.com/deulo-careers/meeting-with-francis-u-okpoluaefe"

@@ -105,15 +105,14 @@ export default function Contact() {
           rows="12"
           placeholder="Your Message"
           required></textarea>
-        {/* <button type="submit" className="btn btn_primary">
-          Send message
-        </button> */}
+
         <MagicButton
           type="submit"
           title="Send message"
           icon={<FaLocationArrow />}
           position="right"
         />
+
         {isLoading && (
           <div className="loader_container">
             <Loader />
