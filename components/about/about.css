@@ -17,6 +17,7 @@
 
 .about_card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -245,8 +246,8 @@
     }
 
     .about_card {
-      flex-direction: column;
       gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .highlight,
