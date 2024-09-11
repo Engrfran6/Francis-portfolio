@@ -17,9 +17,8 @@
 
 .about_card {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  /* height: 25.5rem; */
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -245,26 +244,14 @@
       font-size: 1.5rem;
     }
 
-    .about_content {
-      gap: 2rem;
-    }
-
     .about_card {
       flex-direction: column;
-      align-items: center;
-      width: 100%;
       gap: 1rem;
-      height: max-content;
     }
 
     .highlight,
     .favourite_tools {
       width: 100%;
-    }
-
-    .favourite_image {
-      width: 1.1rem;
-      height: 1.1rem;
     }
 
     .favourite_tools {
