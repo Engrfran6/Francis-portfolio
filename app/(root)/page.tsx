@@ -62,7 +62,7 @@ const Home = () => {
       {/* <Grid /> */}
       {/* <RecentProjects /> */}
       <section className="max-w-7xl w-full mx-auto pb-28 sm:px-10 px-5">
-        <Clients />
+        {/* <Clients /> */}
       </section>
     </main>
   );

@@ -36,8 +36,8 @@
   }
 
   .dark {
-    /* --background: 240 10% 3.9%; */
-    /* --background: 0 0% 21.57%; */
+    --background: 240 10% 3.9%;
+    --background: 0 0% 21.57%;
     --background: 0 0% 6.67%;
     --foreground: 0 0% 98%;
 
@@ -94,13 +94,5 @@ h6 {
 @layer utilities {
   .heading {
     @apply font-bold text-2xl md:text-4xl text-center;
-  }
-
-  .about_sub-headings {
-    @apply text-[1.7rem] border-b border-white/10 mb-2;
-  }
-
-  .key_skills-list::marker {
-    @apply text-[1rem];
   }
 }
