@@ -6,5 +6,3 @@ const pathname = usePathname();
 export const route = () => {
   return pathname;
 };
-
-console.log('pathkkkkkkk=======>', route());

@@ -8,7 +8,7 @@ import ReactJs from '../../tools/react.png';
 export default function Technologies() {
   return (
     <section className="flex flex-wrap justify-center items-center gap-20 w-full min-h-[13vh] md:gap-8 md:px-12">
-      <ul className="flex flex-wrap justify-center items-center gap-20 w-full min-h-[13vh] md:gap-40 md:px-10">
+      <ul className="flex flex-wrap justify-center items-center gap-6 w-full min-h-[13vh] md:gap-30 md:px-10">
         <li>
           <Image width={40} height={40} alt="ReactJs" src={ReactJs} title="ReactJs" />
         </li>

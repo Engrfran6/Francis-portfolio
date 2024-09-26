@@ -1,7 +1,7 @@
 'use client';
 
 import './about.css';
-import ME from '../image/Francis.jpeg';
+import ME from '../image/profilephoto.png';
 import Image from 'next/image';
 import {MdEmail} from 'react-icons/md';
 import {FaRegStar} from 'react-icons/fa';
@@ -9,15 +9,13 @@ import {RiHomeOfficeLine} from 'react-icons/ri';
 import {SlLocationPin} from 'react-icons/sl';
 import Typscript from '../../tools/typescript.svg';
 import NextJs from '../../tools/nextjs.webp';
-import NextJs2 from '../../tools/next.svg';
 import NodeJs from '../../tools/nodejs.png';
 import Figma from '../../tools/figma.png';
 import ReactJs from '../../tools/react.png';
 import {BsLinkedin, BsTwitterX} from 'react-icons/bs';
 import {AiOutlineGithub} from 'react-icons/ai';
 import {useEffect, useRef, useState} from 'react';
-import {projectList} from '../projectList';
-import {aboutMe} from '@/data';
+import {aboutMe, projectList} from '@/data';
 
 export default function About() {
   const startYear = 2020;
@@ -32,11 +30,10 @@ export default function About() {
     numberOfYears -= 1;
   }
 
-  const projectsCompleted = projectList.length + 30;
+  const projectsCompleted = projectList?.length + 25;
 
   const [isReadMore, setIsReadMore] = useState(false);
   const containerRef = useRef(null);
-  const [readingTime, setReadingTime] = useState(0);
 
   const toggleReadMore = () => {
     setIsReadMore(!isReadMore);
@@ -95,7 +92,7 @@ export default function About() {
             <div className="highlight">
               <h2 className="highlight_heading">Highlights</h2>
               <div className="highlight_profile">
-                <div className="highlight_profile-image">
+                <div>
                   <Image
                     className="highlight_profile_image-img"
                     src={ME}
@@ -138,7 +135,7 @@ export default function About() {
 
             <div className="favourite_tools">
               <div className="favourite">
-                <h2 className="favourite_heading">Favourite tools</h2>
+                <h2 className="favourite_heading">Favourite technologies</h2>
                 <ul className="favourite_list">
                   <li className="favourite_listitems">
                     <Image
@@ -252,23 +249,27 @@ export default function About() {
             </h2>
             <ul className="key_skills-list">
               <li className="key_skills-listitems">
-                Front-End Development: React, Next.js, Redux, Recoil, JavaScript, HTML5, CSS3
+                <span>Front-End Development:</span> ReactJs, NextJs, Redux, Recoil, JavaScript,
+                Typescript, HTML5, CSS3
               </li>
               <li className="key_skills-listitems">
-                Back-End Development: Node.js, Express.js, Firebase, Appwrite{' '}
+                <span>Back-End Development:</span> Node.js, Express.js, Firebase, Appwrite{' '}
               </li>
               <li className="key_skills-listitems">
-                Design Frameworks: Tailwind CSS, Bootstrap, Vanilla CSS, Styled Components
+                <span> Design Frameworks:</span> Tailwind CSS, Bootstrap, Vanilla CSS, Styled
+                Components
               </li>
               <li className="key_skills-listitems">Version Control: Git, GitFlow</li>
               <li className="key_skills-listitems">
-                Responsive Design: Mobile-first approach, cross-browser compatibility
+                <span>Responsive Design:</span> Mobile-first approach, cross-browser compatibility
               </li>
               <li className="key_skills-listitems">
-                Certifications: Front-End Developer Professional Certificate from Meta And Front-End
-                Developer (React) Certificate from HackerRank
+                <span> Certifications:</span> Front-End Developer Professional Certificate from Meta
+                And Front-End Developer (React) Certificate from HackerRank
               </li>
-              <li className="key_skills-listitems">Collaborative Tools: GitHub, Jira, Slack</li>
+              <li className="key_skills-listitems">
+                <span>Collaborative Tools:</span> GitHub, Jira, Slack
+              </li>
             </ul>
           </div>
         </div>

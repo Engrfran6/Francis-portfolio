@@ -8,8 +8,10 @@ import CustomBtn from '../ui/customButton/CustomBtn';
 import {MdCallMade} from 'react-icons/md';
 import {usePathname} from 'next/navigation';
 import Socials from '../socials/Social';
+import {reverseTitle} from '@/lib/utils';
 
-const BottomNavbar: React.FC = () => {
+const BottomNavbar = () => {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,8 +20,10 @@ const BottomNavbar: React.FC = () => {
     window.location.href = 'mailto:deulo.dev@gmail.com';
   };
 
-  const pathname = usePathname();
-  let heading: string | JSX.Element;
+  const lastPathSegment = pathname.substring(pathname.lastIndexOf('/') + 1);
+  const portfolioTitle = reverseTitle(lastPathSegment);
+
+  let heading: string | JSX.Element = '';
 
   switch (pathname) {
     case '/about':
@@ -34,6 +38,9 @@ const BottomNavbar: React.FC = () => {
       break;
     case '/contact':
       heading = 'Contact';
+      break;
+    case `/portfolio/${lastPathSegment}`:
+      heading = `${portfolioTitle}`;
       break;
     default:
       heading = 'Welcome';
@@ -78,9 +85,9 @@ const BottomNavbar: React.FC = () => {
 
   return (
     <nav
-      className={`flex flex-col gap-12 md:gap-16 bg-black sticky  w-full border-b border-b-[rgba(255,255,255,0.125)] z-[1000] pb-[2rem] pt-5 transition-all duration-300 ease-in-out ${
-        isScrolled ? 'top-[-8%] md:top-[-10%]  text-[0.3rem] md:text-[0.2rem]' : ''
-      }`}>
+      className={`flex flex-col gap-12 md:gap-16 bg-black sticky w-full border-b-[rgba(255,255,255,0.125)] z-[1000] pb-[2rem] pt-5 transition-all duration-300 ease-in-out 
+  ${pathname === `/portfolio/${lastPathSegment}` ? '' : 'border-b'} 
+  ${isScrolled ? 'top-[-8%] md:top-[-10%] text-[0.3rem] md:text-[0.2rem]' : ''}`}>
       <div className="flex justify-between md:justify-evenly items-center w-[100%] pl-4 font-semibold">
         <div className="block md:hidden">
           <Socials otherClassName="text-white" />
@@ -109,8 +116,8 @@ const BottomNavbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-2 ">
-        <h1 className={`heading px-3 ${isScrolled ? 'text-[1rem] md:text-[1.8rem]' : ''}`}>
+      <div className="flex flex-col items-center justify-center gap-2 pt-12">
+        <h1 className={`heading px-3 ${isScrolled && 'text-[1rem] md:text-[1.8rem]'}`}>
           {heading}
         </h1>
         <div className="bg-purple w-20 h-2 rounded-full mt-2"></div>

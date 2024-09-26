@@ -4,7 +4,7 @@ import {MdAccessTime, MdOutlineDoubleArrow} from 'react-icons/md';
 import {usePathname} from 'next/navigation';
 import CustomLink from '../ui/customLink/CustomLink';
 import {useEffect, useState} from 'react';
-import {calculateReadingTime} from '@/lib/utils';
+import {calculateReadingTime, formatTitle} from '@/lib/utils';
 import {useScroll} from 'framer-motion';
 import {useRef} from 'react';
 
@@ -40,6 +40,9 @@ export default function ProjectCard({
     target: container,
     offset: ['start start', 'end end'],
   });
+
+  const formattedTitle = formatTitle(title)?.toLocaleLowerCase();
+
   return (
     <section
       ref={container}
@@ -80,7 +83,7 @@ export default function ProjectCard({
               <h4 className="card_description-tech">{tech}</h4>
               <CustomLink
                 className="btn"
-                href={`portfolio/${title}`}
+                href={`portfolio/${formattedTitle}`}
                 text="VIEW PROJECT"
                 icon={<MdOutlineDoubleArrow />}
               />

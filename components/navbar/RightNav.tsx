@@ -84,7 +84,7 @@ const RightNav = ({open, setOpen}: StateProps) => {
         About
       </Link>
       <Link
-        className={`link ${pathname === '/portfolio' ? 'active' : ''}`.trim()}
+        className={`link ${pathname.startsWith('/portfolio') ? 'active' : ''}`.trim()}
         href="/portfolio"
         onClick={() => setOpen(false)}>
         Portfolio

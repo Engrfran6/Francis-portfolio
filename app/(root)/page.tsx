@@ -5,10 +5,10 @@ import Clients from '@/components/Clients';
 import Approach from '@/components/Approach';
 import Experience from '@/components/Experience';
 import Technologies from '@/components/technologies/Technologies';
-import {projectList} from '@/components/projectList';
 import ProjectCard, {ProjectCardProps} from '@/components/projectCard/ProjectCard';
 import MagicButton from '@/components/MagicButton';
 import {FaLocationArrow} from 'react-icons/fa6';
+import {projectList} from '@/data';
 
 const Home = () => {
   return (
