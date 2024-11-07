@@ -1,30 +1,24 @@
-import './projectCard.css';
-import Image, {StaticImageData} from 'next/image';
-import {MdAccessTime, MdOutlineDoubleArrow} from 'react-icons/md';
-import {usePathname} from 'next/navigation';
-import CustomLink from '../ui/customLink/CustomLink';
-import {useEffect, useState} from 'react';
 import {calculateReadingTime, formatTitle} from '@/lib/utils';
 import {useScroll} from 'framer-motion';
-import {useRef} from 'react';
+import Image, {StaticImageData} from 'next/image';
+import {usePathname} from 'next/navigation';
+import {useEffect, useRef, useState} from 'react';
+import {IoArrowForward} from 'react-icons/io5';
+import {MdAccessTime} from 'react-icons/md';
+import CustomLink from '../ui/customLink/CustomLink';
+import './projectCard.css';
 
 export interface ProjectCardProps {
   image: StaticImageData | string;
-  tech: string;
+  tech: string[];
   title: string;
   description: string;
-  route: string;
-  index?: number;
+  role?: string;
+  snapshots?: string[];
+  livepreview?: string;
 }
 
-export default function ProjectCard({
-  image,
-  tech,
-  title,
-  description,
-  route,
-  index,
-}: ProjectCardProps) {
+export default function ProjectCard({image, tech, title, description}: ProjectCardProps) {
   const pathname = usePathname();
   const [readingTime, setReadingTime] = useState(0);
 
@@ -73,7 +67,7 @@ export default function ProjectCard({
                 {readingTime} min read
               </span>
               <h2 className="description_heading">{title}</h2>
-              <div className="card_description-underline"></div>
+              <div className="card_description-underline" />
             </div>
             <div
               className={`card_description-text ${
@@ -85,12 +79,12 @@ export default function ProjectCard({
                 className="btn"
                 href={`portfolio/${formattedTitle}`}
                 text="VIEW PROJECT"
-                icon={<MdOutlineDoubleArrow />}
+                icon={<IoArrowForward />}
               />
             </div>
           </div>
           <a
-            href={route}
+            href={`portfolio/${formattedTitle}`}
             className={`card_image ${pathname === '/portfolio' ? 'card_image-grid' : ''}`.trim()}>
             <Image src={image} width={1000} height={1000} alt="Project image" />
           </a>

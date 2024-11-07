@@ -1,14 +1,13 @@
 'use client';
 
-import './contact.css';
 import {AiOutlineMail} from 'react-icons/ai';
-import {BsLinkedin} from 'react-icons/bs';
-import {BsWhatsapp} from 'react-icons/bs';
+import {BsLinkedin, BsWhatsapp} from 'react-icons/bs';
+import './contact.css';
 // import emailjs from 'emailjs.com';
 import {useRef, useState} from 'react';
 
-import Loader from '../loader/Loader';
 import {FaLocationArrow} from 'react-icons/fa';
+import Loader from '../loader/Loader';
 import MagicButton from '../MagicButton';
 export default function Contact() {
   const contacts = [

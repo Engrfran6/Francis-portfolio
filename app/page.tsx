@@ -1,14 +1,18 @@
 'use client';
 
-import Hero from '@/components/Hero';
-import Clients from '@/components/Clients';
+import About from '@/components/about/About';
 import Approach from '@/components/Approach';
+import Certifications from '@/components/Certifications';
+import Contact from '@/components/contact/Contact';
+import Education from '@/components/Education';
 import Experience from '@/components/Experience';
-import Technologies from '@/components/technologies/Technologies';
-import ProjectCard, {ProjectCardProps} from '@/components/projectCard/ProjectCard';
+import Hero from '@/components/Hero';
 import MagicButton from '@/components/MagicButton';
+import PortfolioDesktop from '@/components/projectCard/PortfolioDesktop';
+import ProjectCard from '@/components/projectCard/ProjectCard';
+import Technologies from '@/components/technologies/Technologies';
+import {projects} from '@/data';
 import {FaLocationArrow} from 'react-icons/fa6';
-import {projectList} from '@/data';
 
 const Home = () => {
   return (
@@ -27,27 +31,22 @@ const Home = () => {
         <Hero />
       </section>
 
-      <section
-        className="flex flex-col justify-center items-center gap-10   py-12 w-[100%] mx-auto sm:px-10 px-5 bg-[#000000]"
-        style={{borderTop: '1px solid #3d3e41', borderBottom: '1px solid #3d3e41'}}>
-        <h1 className="heading">
-          Favourite <span className="text-purple"> Tools</span>
-        </h1>
-        <Technologies />
-        <h4>Among many others</h4>
-      </section>
+      <Technologies />
+
+      <Education />
+      <Certifications />
 
       <section className="max-w-7xl w-full verflow-hidden mx-auto sm:px-10 px-5">
         <Experience />
       </section>
 
-      <section className="max-w-7xl w-full flex flex-col justify-center items-center gap-10  py-12 verflow-hidden mx-auto sm:px-10 px-5">
+      <section className="flex max-w-7xl w-full md:hidden flex-col justify-center items-center gap-10  py-12 verflow-hidden mx-auto sm:px-10 px-5">
         <h1 className="heading">
           Projects <span className="text-purple"> Completed</span>
         </h1>
-        <div className="flex flex-col gap-20 md:gap-16 ">
-          {projectList?.slice(0, 4).map((project: ProjectCardProps, index) => (
-            <ProjectCard key={`p_${index}`} {...project} index={index} />
+        <div className="flex flex-col gap-8 md:gap-16 ">
+          {projects?.slice(0, 4).map((project, index) => (
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
 
@@ -56,13 +55,22 @@ const Home = () => {
         </a>
       </section>
 
+      <section className="hidden md:flex max-w-7xl w-full flex-col justify-center items-center gap-10  py-12 verflow-hidden mx-auto sm:px-10 px-5">
+        <PortfolioDesktop />
+      </section>
+
       <section className="max-w-7xl w-full verflow-hidden mx-auto sm:px-10 px-5">
         <Approach />
       </section>
-      {/* <Grid /> */}
-      {/* <RecentProjects /> */}
+      {/* <section className="max-w-7xl w-full mx-auto pb-28 sm:px-10 px-5">
+        <Clients />
+      </section> */}
       <section className="max-w-7xl w-full mx-auto pb-28 sm:px-10 px-5">
-        {/* <Clients /> */}
+        <About />
+      </section>
+      <section className="w-full mx-auto pb-20 sm:px-10 px-5">
+        <h1 className="heading mb-12">Get in Touch</h1>
+        <Contact />
       </section>
     </main>
   );

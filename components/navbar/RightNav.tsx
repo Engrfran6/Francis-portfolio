@@ -1,9 +1,9 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
-import {StateProps} from './Hamburger'; // Import StateProps from Hamburger
-import MagicButton from '../MagicButton';
 import {FaLocationArrow} from 'react-icons/fa';
+import styled from 'styled-components';
+import MagicButton from '../MagicButton';
+import {StateProps} from './Hamburger'; // Import StateProps from Hamburger
 
 // Use the StateProps interface to type the props
 const MenuList = styled.div<StateProps>`
@@ -78,8 +78,8 @@ const RightNav = ({open, setOpen}: StateProps) => {
         Home
       </Link>
       <Link
-        className={`link ${pathname === '/about' ? 'active' : ''}`.trim()}
-        href="/about"
+        className={`link ${pathname === '/#about' ? 'active' : ''}`.trim()}
+        href="#about"
         onClick={() => setOpen(false)}>
         About
       </Link>
@@ -87,7 +87,7 @@ const RightNav = ({open, setOpen}: StateProps) => {
         className={`link ${pathname.startsWith('/portfolio') ? 'active' : ''}`.trim()}
         href="/portfolio"
         onClick={() => setOpen(false)}>
-        Portfolio
+        Projects
       </Link>
       <Link
         className={`link ${pathname === '/contact' ? 'active' : ''}`.trim()}

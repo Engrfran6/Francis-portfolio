@@ -1,14 +1,14 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
+import {reverseTitle} from '@/lib/utils';
+import {usePathname} from 'next/navigation';
+import {useEffect, useState} from 'react';
+import {MdCallMade} from 'react-icons/md';
+import Socials from '../socials/Social';
+import CustomBtn from '../ui/customButton/CustomBtn';
+import CustomLink from '../ui/customLink/CustomLink';
 import Hamburger from './Hamburger';
 import RightNav from './RightNav';
-import CustomLink from '../ui/customLink/CustomLink';
-import CustomBtn from '../ui/customButton/CustomBtn';
-import {MdCallMade} from 'react-icons/md';
-import {usePathname} from 'next/navigation';
-import Socials from '../socials/Social';
-import {reverseTitle} from '@/lib/utils';
 
 const BottomNavbar = () => {
   const pathname = usePathname();
@@ -34,7 +34,7 @@ const BottomNavbar = () => {
       );
       break;
     case '/portfolio':
-      heading = 'Portfolio';
+      heading = 'Projects';
       break;
     case '/contact':
       heading = 'Contact';
@@ -116,7 +116,7 @@ const BottomNavbar = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-2 pt-12">
+      <div className="flex flex-col items-center justify-center gap-2 pt-2">
         <h1 className={`heading px-3 ${isScrolled && 'text-[1rem] md:text-[1.8rem]'}`}>
           {heading}
         </h1>

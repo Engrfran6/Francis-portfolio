@@ -1,12 +1,12 @@
-import {FaLocationArrow} from 'react-icons/fa6';
+import {socialMedia} from '@/data';
 import {motion} from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import {FaLocationArrow} from 'react-icons/fa6';
+import ME from './image/profilephoto.png';
 import MagicButton from './MagicButton';
 import {Spotlight} from './ui/Spotlight';
 import {TextGenerateEffect} from './ui/TextGenerateEffect';
-import {socialMedia} from '@/data';
-import Link from 'next/link';
-import Image from 'next/image';
-import ME from './image/profilephoto.png';
 
 const Hero = () => {
   return (

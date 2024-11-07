@@ -1,8 +1,8 @@
-import {Metadata} from 'next';
-import DisplaySingleProject from './DisplaySingleProject';
-import {notFound} from 'next/navigation';
+import {projects} from '@/data';
 import {reverseTitle} from '@/lib/utils';
-import {projectList} from '@/data';
+import {Metadata} from 'next';
+import {notFound} from 'next/navigation';
+import DisplaySingleProject from './DisplaySingleProject';
 
 export const metadata: Metadata = {
   title: `Portfolio | Francis's Portfolio`,
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Porfolio({params}: {params: {slug: string}}) {
   const decodedUrlParams = reverseTitle(params.slug);
 
-  const project = projectList?.find((item) => item.title === decodedUrlParams);
+  const project = projects?.find((item) => item.title === decodedUrlParams);
 
   if (!project) {
     return notFound();

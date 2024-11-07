@@ -1,8 +1,8 @@
 'use client';
 
 import MagicButton from '@/components/MagicButton';
-import ProjectCard, {ProjectCardProps} from '@/components/projectCard/ProjectCard';
-import {projectList} from '@/data';
+import ProjectCard from '@/components/projectCard/ProjectCard';
+import {projectList, projects} from '@/data';
 import {useState} from 'react';
 import {FaLocationArrow} from 'react-icons/fa';
 
@@ -10,7 +10,7 @@ const Portfolio = () => {
   const [showmore, setShowmore] = useState<number>(4);
 
   const handleClick = () => {
-    if (showmore < projectList.length) {
+    if (showmore < projects.length) {
       setShowmore((prev) => prev + 4);
     }
   };
@@ -20,8 +20,8 @@ const Portfolio = () => {
         Projects <span className="text-purple"> Completed</span>
       </h1>
       <div className="flex flex-col gap-20 md:gap-16 ">
-        {projectList?.slice(0, showmore).map((project: ProjectCardProps, index) => (
-          <ProjectCard key={`p_${index}`} {...project} index={index} />
+        {projects?.slice(0, showmore).map((project, index) => (
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
 

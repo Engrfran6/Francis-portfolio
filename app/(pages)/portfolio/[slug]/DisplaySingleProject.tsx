@@ -1,7 +1,14 @@
 import {ProjectCardProps} from '@/components/projectCard/ProjectCard';
 import Image from 'next/image';
 
-const DisplaySingleProject = ({title, image, tech, description, route}: ProjectCardProps) => {
+type SlugProps = {
+  title: string;
+  image: string;
+  tech: string;
+  description: string;
+};
+
+const DisplaySingleProject = ({title, image, tech, description}: ProjectCardProps) => {
   return (
     <section className="flex flex-col gap-10">
       <header className="flex items-center justify-center pb-6 px-2 sm:px-0 bg-[#000000] border-b  border-b-[rgba(255,255,255,0.125)]">

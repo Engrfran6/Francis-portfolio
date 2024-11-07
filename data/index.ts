@@ -1,17 +1,3 @@
-import PasswordGenerator from '../assets/portfolio1.jpg';
-import ToDoList from '../assets/portfolio2.jpg';
-import NextJsBlog from '../assets/portfolio4.jpg';
-import BankDashboard from '../assets/bankdashboard.png';
-import WeatherApp from '../assets/bankdashboard.png';
-import Ecommerce from '../assets/portfolio6.jpg';
-
-export const navItems = [
-  {name: 'About', link: '#about'},
-  {name: 'Projects', link: '#projects'},
-  {name: 'Testimonials', link: '#testimonials'},
-  {name: 'Contact', link: '#contact'},
-];
-
 export const gridItems = [
   {
     id: 1,
@@ -82,120 +68,30 @@ export const gridItems = [
 
 export const projectList = [
   {
-    image: BankDashboard,
+    image: '/assets/bankdashboard.png',
     tech: 'NextJs, JavaScript',
     title: 'Modern Bank Dashboard',
     description:
       "This Modern Bank Dashboard showcases a clean and responsive user interface designed for financial institutions. Built using Next.js for seamless server-side rendering and client-side transitions, and powered by JavaScript for interactive features. This project highlights efficiency in managing financial data, secure authentication processes, and real-time transaction tracking. The dashboard's design focuses on user experience and accessibility, ensuring smooth navigation across multiple devices. ",
-    route: '/portfolio/project-1',
   },
   {
-    image: PasswordGenerator,
+    image: '/assets/customhub-home.png',
+    tech: 'NextJs, Redux, Tailwind CSS',
+    title: 'Portfolio Website',
+    description:
+      'Developed CustomHub, an e-commerce platform for customizing items like apparel, drinkware, and office accessories. Built a responsive interface with a design tool for personalized uploads, enabling users to create unique products. Integrated high-quality printing and payment processing, ensuring a seamless user experience and showcasing my skills in interactive, modular web development.',
+    readingTime: '3 min read',
+  },
+  {
+    image: '/assets/passwordgenerator.jpg',
     tech: 'HTML, CSS, JavaScript',
     title: 'Random Password Generator',
     description:
       'The Random Password Generator is a simple yet powerful tool designed to generate secure and complex passwords with just a click. Built using HTML, CSS, and JavaScript, this project focuses on both functionality and user experience. The intuitive interface allows users to customize password length and include various character sets such as numbers, symbols, and letters. This tool ensures password strength, enhancing online security and privacy across multiple platforms.',
-    route: '/portfolio/project-1',
-  },
-
-  {
-    image: NextJsBlog,
-    tech: 'NextJs, Redux, Tailwind CSS',
-    title: 'Portfolio Website',
-    description:
-      'This Portfolio Website is a dynamic and visually appealing personal site built using React and styled with Tailwind CSS. The project focuses on showcasing professional work, skills, and achievements in an elegant, responsive design. Utilizing React for seamless navigation and component-based architecture, and Tailwind CSS for efficient, modern styling, this portfolio demonstrates a deep understanding of both web development and design principles. The clean layout ensures optimal performance across devices, enhancing the user experience while leaving a lasting impression.',
-    readingTime: '3 min read',
-    route: '/portfolio/project-1',
-  },
-  {
-    image: Ecommerce,
-    tech: 'NextJs, Redux, JavaScript',
-    title: 'E-commerce Website',
-    description:
-      'This E-commerce Website provides a robust platform for online shopping, developed with Next.js for optimized performance and SEO, Redux for efficient state management, and JavaScript for interactivity. The site includes features such as product browsing, shopping cart management, and a smooth checkout process, all within a fast, responsive, and user-friendly interface. Built to scale, this platform seamlessly handles dynamic data and user interactions, ensuring an engaging shopping experience for customers.',
-    readingTime: '5 min read',
-    route: '/portfolio/project-1',
-  },
-  {
-    image: WeatherApp,
-    tech: 'HTML, CSS, JavaScript',
-    title: 'Weather App',
-    description: 'Lorem ipsum dolor sit amet, co',
-    route: '/portfolio/project-1',
-  },
-  {
-    image: ToDoList,
-    tech: 'React, Redux, CSS',
-    title: 'To-Do List App',
-    description: 'Lorem ipsum dolor sit amet, cons',
-    readingTime: '2 min read',
-    route: '/portfolio/project-1',
-  },
-
-  {
-    image: NextJsBlog,
-    tech: 'Node.js, Express.js, MongoDB',
-    title: 'Blog Platform',
-    description: 'Lorem ipsum dolor sit amet, ',
-    readingTime: '4 min read',
-    route: '/portfolio/project-1',
-  },
-];
-
-export const projects = [
-  {
-    id: 1,
-    title: '3D Solar System Planets to Explore',
-    des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
-    img: '/p1.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-    link: '/ui.earth.com',
-  },
-  {
-    id: 2,
-    title: 'Yoom - Video Conferencing App',
-    des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
-    img: '/p2.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
-    link: '/ui.yoom.com',
-  },
-  {
-    id: 3,
-    title: 'AI Image SaaS - Canva Application',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
-    img: '/p3.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
-    link: '/ui.aiimg.com',
-  },
-  {
-    id: 4,
-    title: 'Animated Apple Iphone 3D Website',
-    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
-    img: '/p4.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    link: '/ui.apple.com',
   },
 ];
 
 export const testimonials = [
-  {
-    quote:
-      "Collaborating with Francis was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Francis's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Francis is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
-  },
-  {
-    quote:
-      "Collaborating with Francis was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Francis's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Francis is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
-  },
-  {
-    quote:
-      "Collaborating with Francis was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Francis's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Francis is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
-  },
   {
     quote:
       "Collaborating with Francis was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Francis's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Francis is the ideal partner.",
@@ -246,32 +142,20 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: 'BuyIt - Deulo Software Lab ( DSL )',
-    desc: 'Currently developing BuyIt, a web platform that facilitates order placement, processes purchases on behalf of users, and ensures delivery to any location.',
-    className: 'md:col-span-2', // change to md:col-span-2
+    title: 'MERN Stack Developer - CustomHub',
+    desc: 'Developed CustomHub, an e-commerce platform for customizing items like apparel, drinkware, and office accessories. Built a responsive interface with a design tool for personalized uploads, enabling users to create unique products. Integrated stripe for payment processing, ensuring a seamless user experience and showcasing my skills in interactive, modular web development.',
+    className: 'md:col-span-2',
     thumbnail: '/exp2.svg',
   },
   {
     id: 2,
-    title: 'Frontend Engineer Intern',
-    desc: 'Assisted in the development of a web-based platform using React.js for MegaBoss, enhancing interactivity.',
+    title: 'Frontend Engineer Intern - MegaBoss',
+    desc: `Assisted in the development of a web-based platform using React.js, 
+    Developed and optimized frontend components in React for user-facing features, increasing user engagement by 20%.
+	Collaborated with senior engineers to design RESTful APIs, improving backend performance and security.
+`,
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
-  },
-
-  {
-    id: 3,
-    title: 'Freelance App Dev Project',
-    desc: 'Led the dev of a mobile app for a client, from initial concept to deployment on app stores.',
-    className: 'md:col-span-2', // change to md:col-span-2
-    thumbnail: '/exp3.svg',
-  },
-  {
-    id: 4,
-    title: 'Lead Frontend Developer',
-    desc: 'Developed and maintained user-facing features using modern frontend technologies.',
-    className: 'md:col-span-2',
-    thumbnail: '/exp4.svg',
   },
 ];
 
@@ -335,3 +219,68 @@ export const aboutMe = {
     or simply enjoying some downtime with good food and rest.
   `,
 };
+
+export const education = {
+  degree: 'Bachelor of Engineering',
+  honor: 'B.Eng',
+  course: 'Electrical/electronics & computer engineering',
+  start: '02/2008',
+  end: '11/2013',
+  university: 'Delta State University',
+  location: 'Abraka, Nigeria',
+};
+
+export const certification = [
+  {name: 'Meta Front-End Developer Professional Certificate', issuer: 'Coursera'},
+
+  {name: 'Frontend Developer (React)', issuer: 'HackerRank'},
+
+  {name: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp'},
+];
+
+export const projects = [
+  {
+    image: '/assets/bankdashboard.png',
+    title: 'Modern Bank Dashboard',
+    description:
+      "This Modern Bank Dashboard showcases a clean and responsive user interface designed for financial institutions. Built using Next.js for seamless server-side rendering and client-side transitions, and powered by JavaScript for interactive features. This project highlights efficiency in managing financial data, secure authentication processes, and real-time transaction tracking. The dashboard's design focuses on user experience and accessibility, ensuring smooth navigation across multiple devices. ",
+    tech: ['NextJs', 'JavaScript'],
+    role: 'Frontend Developer',
+    livepreview: 'https//www.deulo34.vercel.app',
+
+    snapshots: [
+      '/assets/bankdashboard.png',
+      '/assets/bankdashboard.png',
+      '/assets/bankdashboard.png',
+    ],
+  },
+  {
+    image: '/assets/bankdashboard.png',
+    tech: ['Node.js', 'Express.js', 'MongoDB'],
+    title: 'Customizable Phone Case',
+    description: `Create a personalized phone case experience with this customizable e-commerce solution, built using Next.js, Tailwind CSS, and Stripe. This project empowers users to design their own unique phone cases by uploading images or choosing from pre-made designs tailored to different phone models.
+      The platform's interactive editor allows users to see their design in real-time, adjusting for size, position, and style to fit perfectly on their selected phone model.   `,
+    readingTime: '4 min read',
+    role: 'Frontend Developer',
+    livepreview: 'https//www.deulo.vercel.app',
+    snapshots: [
+      '/assets/bankdashboard.png',
+      '/assets/bankdashboard.png',
+      '/assets/bankdashboard.png',
+    ],
+  },
+  {
+    image: '/assets/passwordgenerator.jpg',
+    tech: ['HTML', ' CSS', 'JavaScript'],
+    title: 'Random Password Generator',
+    description:
+      'The Random Password Generator is a simple yet powerful tool designed to generate secure and complex passwords with just a click. Built using HTML, CSS, and JavaScript, this project focuses on both functionality and user experience. The intuitive interface allows users to customize password length and include various character sets such as numbers, symbols, and letters. This tool ensures password strength, enhancing online security and privacy across multiple platforms.',
+    role: 'Frontend Developer',
+    livepreview: 'https//www.deulo0987654567.vercel.app',
+    snapshots: [
+      '/assets/pasword-generator.jpg',
+      '/assets/pasword-generator.jpg',
+      '/assets/pasword-generator.jpg',
+    ],
+  },
+];
