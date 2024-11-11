@@ -246,28 +246,20 @@ export const projects = [
       "This Modern Bank Dashboard showcases a clean and responsive user interface designed for financial institutions. Built using Next.js for seamless server-side rendering and client-side transitions, and powered by JavaScript for interactive features. This project highlights efficiency in managing financial data, secure authentication processes, and real-time transaction tracking. The dashboard's design focuses on user experience and accessibility, ensuring smooth navigation across multiple devices. ",
     tech: ['NextJs', 'JavaScript'],
     role: 'Frontend Developer',
-    livepreview: 'https//www.deulo34.vercel.app',
+    livepreview: 'https://banking-iota.vercel.app/sign-in',
 
-    snapshots: [
-      '/assets/bankdashboard.png',
-      '/assets/bankdashboard.png',
-      '/assets/bankdashboard.png',
-    ],
+    snapshots: ['/assets/bankdashboard2.png', '/assets/bankdashboard.png'],
   },
   {
-    image: '/assets/bankdashboard.png',
+    image: '/assets/customhub1.png',
     tech: ['Node.js', 'Express.js', 'MongoDB'],
     title: 'Customizable Phone Case',
     description: `Create a personalized phone case experience with this customizable e-commerce solution, built using Next.js, Tailwind CSS, and Stripe. This project empowers users to design their own unique phone cases by uploading images or choosing from pre-made designs tailored to different phone models.
       The platform's interactive editor allows users to see their design in real-time, adjusting for size, position, and style to fit perfectly on their selected phone model.   `,
     readingTime: '4 min read',
     role: 'Frontend Developer',
-    livepreview: 'https//www.deulo.vercel.app',
-    snapshots: [
-      '/assets/bankdashboard.png',
-      '/assets/bankdashboard.png',
-      '/assets/bankdashboard.png',
-    ],
+    livepreview: 'https://customhub.vercel.app',
+    snapshots: ['/assets/customhub2.png', '/assets/customhub3.png'],
   },
   {
     image: '/assets/passwordgenerator.jpg',
@@ -276,11 +268,7 @@ export const projects = [
     description:
       'The Random Password Generator is a simple yet powerful tool designed to generate secure and complex passwords with just a click. Built using HTML, CSS, and JavaScript, this project focuses on both functionality and user experience. The intuitive interface allows users to customize password length and include various character sets such as numbers, symbols, and letters. This tool ensures password strength, enhancing online security and privacy across multiple platforms.',
     role: 'Frontend Developer',
-    livepreview: 'https//www.deulo0987654567.vercel.app',
-    snapshots: [
-      '/assets/pasword-generator.jpg',
-      '/assets/pasword-generator.jpg',
-      '/assets/pasword-generator.jpg',
-    ],
+    livepreview: 'password-generator-five-liart.vercel.app',
+    snapshots: ['/assets/password-generator2.png', '/assets/passwordgenerator.jpg'],
   },
 ];

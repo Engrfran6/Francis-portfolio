@@ -2,6 +2,7 @@
 
 import {aboutMe, projectList} from '@/data';
 import {useRef, useState} from 'react';
+import Wrapper from '../Wrapper';
 import './about.css';
 
 export default function About() {
@@ -27,49 +28,49 @@ export default function About() {
   };
 
   return (
-    <section
-      id="about"
-      className="flex flex-col gap-12 md:px-40 mt-20 md:py-12 p-4 border-4 bg-[#272727]">
-      <div className="about_me">
-        <h2 className="about_heading">
-          About <span className="text-purple">me</span>
-        </h2>
-        <div className="about_content">
-          <div ref={containerRef} className="about_me-text ">
-            <p className="">
-              {aboutMe.about.paragragh1}
-              {isReadMore && (
-                <p style={{display: 'flex', flexDirection: 'column', gap: '.8rem'}}>
-                  <br />
-                  {aboutMe.about.paragragh2}
-                  <n />
-                  {aboutMe.about.paragragh3}
-                  <n />
-                  {aboutMe.about.paragragh4}
-                </p>
-              )}
-              <button
-                onClick={toggleReadMore}
-                style={{
-                  color: isReadMore === 'Read More' || 'Read Less' ? 'purple' : '',
-                  textDecoration: 'underline',
-                  padding: '0 0.3rem',
-                }}>
-                {isReadMore ? 'Red Less' : 'Read More'}
-              </button>
-            </p>
+    <section id="about" className=" bg-[#272727]">
+      <Wrapper className="px-4 text-sm md:text-[16px] leading-6 md:p-20">
+        <div className="about_me">
+          <h2 className="about_heading">
+            About <span className="text-purple">me</span>
+          </h2>
+          <div className="about_content ">
+            <div ref={containerRef} className="about_me-text ">
+              <p className="">
+                {aboutMe.about.paragragh1}
+                {isReadMore && (
+                  <p style={{display: 'flex', flexDirection: 'column', gap: '.8rem'}}>
+                    <br />
+                    {aboutMe.about.paragragh2}
+                    <n />
+                    {aboutMe.about.paragragh3}
+                    <n />
+                    {aboutMe.about.paragragh4}
+                  </p>
+                )}
+                <button
+                  onClick={toggleReadMore}
+                  style={{
+                    color: isReadMore === 'Read More' || 'Read Less' ? 'white' : '',
+                    textDecoration: 'underline',
+                    padding: '0 0.3rem',
+                    fontWeight: 'bold',
+                  }}>
+                  {isReadMore ? 'Red Less' : 'Read More'}
+                </button>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* ==============================coming soon=============================== */}
-      <div className="communities">
-        <h2 className="community_heading">
-          Com<span className="text-purple">munities</span>
-        </h2>
+        {/* ==============================coming soon=============================== */}
+        <div className="communities">
+          <h2 className="community_heading">
+            Com<span className="text-purple">munities</span>
+          </h2>
 
-        <p>COMING SOON!</p>
-        {/* <div>
+          <p>COMING SOON!</p>
+          {/* <div>
           <p>
             I contribute to many communities in different forms, to mention a few, I am a
             contributor/mentor at ForbesBLK, Calyptus, and ADPList, amongst others.
@@ -88,16 +89,16 @@ export default function About() {
             </div>
           </div>
         </div> */}
-      </div>
+        </div>
 
-      {/* ==============================coming soon=============================== */}
+        {/* ==============================coming soon=============================== */}
 
-      <div className="tech_journey">
-        <h2 className="journey_heading ">
-          Jour<span className="text-purple">ney</span>
-        </h2>
-        <p>COMING SOON!</p>
-        {/* <p>
+        <div className="tech_journey">
+          <h2 className="journey_heading ">
+            Jour<span className="text-purple">ney</span>
+          </h2>
+          <p>COMING SOON!</p>
+          {/* <p>
           He currently works at checkout.com's Headquater in London (UK) with the Fraud Detection
           team to facilitate secure payments across the world, mitigate fraud, and maximize approval
           rates, <span>read more</span>.
@@ -123,21 +124,22 @@ export default function About() {
           Cycle) from conceptualisation/ideation phase to production stage with the company's OKRs
           (Objective Key Results) in view.
         </p> */}
-      </div>
+        </div>
 
-      <div className="hobbies">
-        <h2 className="text-2xl border-b mb-2">
-          Ho<span className="text-purple">bbies</span>
-        </h2>
-        <p>
-          Although not deeply into music, Francis enjoys it, with Jon Bellion&apos;s songs being
-          among his favorites. A creative at heart, he loves traveling, exploring, and appreciating
-          art. When he&apos;s not immersed in writing code, designing, building, or learning
-          something new, you&apos;ll likely find him playing video games (FIFA, PES, Mortal Kombat),
-          swimming, playing a game of snooker, catching up with family, friends, and acquaintances,
-          or simply enjoying some downtime with good food and rest.
-        </p>
-      </div>
+        <div className="hobbies">
+          <h2 className="text-2xl border-b mb-2">
+            Ho<span className="text-purple">bbies</span>
+          </h2>
+          <p>
+            Although not deeply into music, Francis enjoys it, with Jon Bellion&apos;s songs being
+            among his favorites. A creative at heart, he loves traveling, exploring, and
+            appreciating art. When he&apos;s not immersed in writing code, designing, building, or
+            learning something new, you&apos;ll likely find him playing video games (FIFA, PES,
+            Mortal Kombat), swimming, playing a game of snooker, catching up with family, friends,
+            and acquaintances, or simply enjoying some downtime with good food and rest.
+          </p>
+        </div>
+      </Wrapper>
     </section>
   );
 }

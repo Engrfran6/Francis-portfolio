@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import HeaderTitle from './ui/HeaderTitle';
+import Wrapper from './Wrapper';
 
 const skillsArr = [
   {
@@ -96,13 +98,11 @@ export const TechnicalCard = ({title, skills}: SkillsProps) => {
   );
 };
 
-export default function Technologies() {
+export default function TechnicalSkills() {
   return (
     <section className="w-full bg-[#000000] border-y">
-      <div className="w-full md:w-[70%] flex flex-col mx-auto gap-10 py-12 px-2  md:px-20">
-        <h1 className="heading">
-          Technical <span className="text-purple">Skills</span>
-        </h1>
+      <Wrapper className="md:p-20">
+        <HeaderTitle title="Technical" titleSpan="Skills" />
         <ul className="flex flex-col gap-3 md:gap-6 p-2 md:p-14 bg-[#111111] border border-[#313030]">
           {skillsArr.map((skills, i) => (
             <li
@@ -113,7 +113,7 @@ export default function Technologies() {
           ))}
         </ul>
         {/* <h4 className="text-center">Among many others</h4> */}
-      </div>
+      </Wrapper>
     </section>
   );
 }

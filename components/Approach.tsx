@@ -2,15 +2,15 @@ import {AnimatePresence, motion} from 'framer-motion';
 import React from 'react';
 
 import {CanvasRevealEffect} from './ui/CanvasRevealEffect';
+import HeaderTitle from './ui/HeaderTitle';
+import Wrapper from './Wrapper';
 
 const Approach = () => {
   return (
-    <section className="w-full mt-20">
-      <h1 className="heading">
-        My <span className="text-purple">approach</span>
-      </h1>
+    <Wrapper>
+      <HeaderTitle title="My" titleSpan="Approach" />
 
-      <div className="mt-12 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
@@ -51,7 +51,7 @@ const Approach = () => {
           />
         </Card>
       </div>
-    </section>
+    </Wrapper>
   );
 };
 
@@ -118,6 +118,7 @@ const Card = ({
     </div>
   );
 };
+
 const AceternityIcon = ({order}: {order: string}) => {
   return (
     <div>

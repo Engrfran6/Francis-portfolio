@@ -10,10 +10,18 @@ import {TextGenerateEffect} from './ui/TextGenerateEffect';
 
 const Hero = () => {
   return (
-    <div className="mt-16 md:mt-0">
-      <div className="hidden sm:block">
+    <div className="flex flex-col items-center justify-center h-[95vh] pt-16">
+      <div
+        className="h-[95vh] w-full dark:bg-[#111111] bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center">
+        <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#101010]
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        />
+      </div>
+      <div className="hidden md:block">
         <Spotlight className=" -top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
-        {/* <Spotlight className="bg-red-700 h-[80vh] w-[50vw] top-10 left-full" fill="purple" /> */}
+        {/* <Spotlight className="bg-red-700 h-[80vh] w-[50vw] top-10 left-full" fill="purple overflow-hidden" /> */}
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
       <div className="flex flex-col-reverse sm:flex-row md:gap-24 gap-2 justify-center items-center relative mt-16 mb-20 md:my-20 z-10">

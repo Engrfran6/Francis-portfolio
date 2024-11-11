@@ -1,21 +1,33 @@
 import {certification} from '@/data';
+import HeaderTitle from './ui/HeaderTitle';
+import Wrapper from './Wrapper';
 
 const Certifications = () => {
   return (
-    <section
-      className="w-full md:w-max my-6 md:my-12 px-4 p-8 md:p-10"
+    <Wrapper
+      className="md:w-[80%] lg:w-1/2 w-full"
       style={{boxShadow: '0px 2px 4px rgba(233, 224, 224, 0.5)'}}>
-      <h1 className="heading mb-6 md:mb-12">Certifications</h1>
-      <div className="flex flex-col gap-3 mt-6 md:mt-12">
-        {certification.map((c, i) => (
-          <div key={i} className="inline-flex items-center gap-2">
-            <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-purple" />
-            <h3 className="text-[10px] md:text-xl">{c.name}:</h3>
-            <p className="text-[10px] md:text-xl">{c.issuer}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+      <HeaderTitle title="Certifications" />
+      <table className="w-full border-collapse">
+        <thead className="mb-6">
+          <tr className="bg-black-300 p-4 ">
+            <th className="text-left text-[10px] md:text-xl font-semibold pl-5 py-4">
+              Certification
+            </th>
+            <th className="text-left text-[10px] md:text-xl font-semibold pl-5 py-4">Issuer</th>
+          </tr>
+        </thead>
+        <tbody>
+          {certification.map((c, i) => (
+            <tr key={i} className="border-b">
+              <td className="text-[10px] md:text-xl pl-5  py-2 italic">{c.name}</td>
+              <td className="text-[10px] md:text-xl pl-5 py-2 italic">{c.issuer}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Wrapper>
   );
 };
+
 export default Certifications;

@@ -1,7 +1,8 @@
 'use client';
-import {useEffect} from 'react';
-import {motion, stagger, useAnimate} from 'framer-motion';
 import {cn} from '@/lib/utils';
+import {motion, stagger, useAnimate} from 'framer-motion';
+import Link from 'next/link';
+import {useEffect} from 'react';
 
 export const TextGenerateEffect = ({words, className}: {words: string; className?: string}) => {
   const [scope, animate] = useAnimate();
@@ -41,15 +42,15 @@ export const TextGenerateEffect = ({words, className}: {words: string; className
             type: 'spring', // Optional: Use spring animation for a smooth effect
             stiffness: 120, // Optional: Adjust stiffness of spring animation
           }}>
-          <a
-            href="/about"
+          <Link
+            href="/#about"
             className="underline ml-2"
             style={{
               textDecorationThickness: '5px', // Thicker underline (bold)
               textUnderlineOffset: '5px', // Adjust the space between text and underline
             }}>
             Read more
-          </a>
+          </Link>
         </motion.span>
       </motion.div>
     );

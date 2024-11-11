@@ -133,7 +133,7 @@ export default function Oldcard({
           ) : (
             <>
               <div className="flex justify-between w-full p-4 bg-black rounded-xl ">
-                <a href={selectedProject?.livepreview || livepreview}>
+                <a href={selectedProject?.livepreview || livepreview} target="_blank">
                   {selectedProject?.livepreview || livepreview}
                 </a>
                 <Share2Icon />
