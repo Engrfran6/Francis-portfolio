@@ -1,15 +1,15 @@
-import Contact from '../../../components/contact/Contact';
+import Contact from "../../../components/contact/Contact";
 
-import {Metadata} from 'next';
+import {Metadata} from "next";
 
 export const metadata: Metadata = {
   title: `Contact | Francis's Portfolio`,
-  description: 'Modern & Minimal Software Engineer Portfolio',
+  description: "Modern & Minimal Software Engineer Portfolio",
 };
 
 const page = () => {
   return (
-    <section className="relative py-0  md:py-12">
+    <section className="py-0  md:py-12">
       <Contact />
     </section>
   );

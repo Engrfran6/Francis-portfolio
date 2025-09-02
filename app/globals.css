@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Recoleta', sans-serif;
+  font-family: "Recoleta", sans-serif;
 }
 
 @layer base {
@@ -88,5 +88,11 @@ h6 {
   }
   button {
     @apply active:outline-none;
+  }
+}
+
+@layer components {
+  .highlight {
+    @apply text-accent-foreground font-semibold text-[hsl(var(--primary))] dark:text-white/70;
   }
 }

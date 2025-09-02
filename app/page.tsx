@@ -1,38 +1,43 @@
-'use client';
+"use client";
 
-import About from '@/components/about/About';
-import Approach from '@/components/Approach';
-import Certifications from '@/components/Certifications';
-import Contact from '@/components/contact/Contact';
-import Education from '@/components/Education';
-import Experience from '@/components/Experience';
-import Hero from '@/components/Hero';
-import PortfolioDesktop from '@/components/projectCard/PortfolioDesktop';
-import Projects from '@/components/projectCard/Projects';
-import TechnicalSkills from '@/components/TechnicalSkills';
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import HeroMobile from "@/components/HeroMobile";
 
 const Home = () => {
   return (
-    <main>
-      <Hero />
-      <section className="flex flex-col justify-center items-center md:gap-32 md:pb-32">
-        <TechnicalSkills />
+    <main className="h-screen relative">
+      <div className="hidden md:block h-screen">
+        <Hero />
+        <div className="container px-5">
+          <Footer />
+        </div>
+      </div>
 
-        <Education />
-        <Certifications />
+      <HeroMobile />
 
-        <Experience />
+      {/* to be removed
+      <main>
+        <Hero />
+        <section className="flex flex-col justify-center items-center md:gap-32 md:pb-32">
+          <TechnicalSkills />
 
-        <Projects />
+          <Education />
+          <Certifications />
 
-        <PortfolioDesktop />
+          <Experience />
 
-        <Approach />
+          <Projects />
 
-        <About />
+          <PortfolioDesktop />
 
-        <Contact />
-      </section>
+          <Approach />
+
+          <About />
+
+          <Contact />
+        </section>
+      </main> */}
     </main>
   );
 };

@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Francis Uloho Okpoluaefe | Product Designer",
+    "description": "Portfolio website showcasing product design work and skills"
+  },
+  "personal": {
+    "name": "Francis Okpoluaefe",
+    "title": "Frontend Engineer",
+    "location": "Phorthacourt, NG",
+    "avatar": "/confident-professional.png",
+    "email": "deulo.dev@gmail.com",
+    "phone": "+234 (703) 868-9224",
+    "workingHours": "Monday - Friday, 9am - 5pm PST",
+    "availableForWork": true,
+    "badges": ["React", "Next.js", "TypeScript", "Tailwind CSS", "UI/UX"],
+    "social": [
+      {
+        "platform": "GitHub",
+        "url": "https://githum.com/engrfran6",
+        "icon": "Github"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/deulo",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://x.com/deulodev",
+        "icon": "Twitter"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/code_with_deulo",
+        "icon": "Instagram"
+      }
+    ]
+  },
+  "about": {
+    "bio": "I am a Frontend Engineer passionate about transforming user-centric designs into functional, ethical, and inclusive digital experiences. With over 5 years of experience, I specialize in React, Next.js, and TypeScript and enjoy tackling complex problems from the UI all the way to the API, using my proficiency in the MERN stack (MongoDB, Express.js, Node.js) to build complete full-stack solutions.",
+    "focus": [
+      "Building intuitive and accessible interfaces is a technical requirement, not just a design ideal",
+      "Collaborating closely with design teams to implement and maintain robust, scalable design systems",
+      "Advocating for the user throughout the development process to ensure performance and accessibility are never an afterthought"
+    ],
+    "storyhook": "I've leveraged these skills to build products like HuntLedger, a job application tracker, and contributed to Clusta.co, an estate management platform. You can explore these projects in detail below",
+
+    "languages": [
+      {
+        "name": "English",
+        "proficiency": "Native",
+        "level": 100,
+        "flag": "🇺🇸"
+      },
+      {
+        "name": "Isoko",
+        "proficiency": "Native",
+        "level": 100,
+        "flag": "🇺🇸"
+      }
+    ],
+    "interests": ["Design Systems", "Accessibility", "Typography", "Motion Design", "Photography"]
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/",
+      "icon": "FaHome"
+    },
+    {
+      "label": "About me",
+      "href": "/about",
+      "icon": "FaUser"
+    },
+    {
+      "label": "My works",
+      "href": "/experience",
+      "icon": "FaFolderOpen"
+    },
+    {
+      "label": "Contact me",
+      "href": "/contact",
+      "icon": "FaEnvelope"
+    }
+  ],
+
+  "aboutNavigation": [
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Credentials",
+      "href": "#credentials"
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Frontend Developer & UI Engineer",
+      "entity": "Clusta.co",
+      "title": "Estate Management SaaS",
+      "period": "2024 - Present",
+      "description": "Key frontend developer on a 4-person team building a modern estate management SaaS application. Translated complex UI/UX designs into functional, high-performance code. Collaborated closely with backend developers and designers to ensure seamless integration and a cohesive user experience.",
+      "achievements": [
+        "Single-handedly engineered the marketing landing page using React, significantly improving initial user engagement and conversion.",
+        "Collaborated on the development of the main application dashboard using Next.js, TypeScript, and Tailwind CSS, ensuring type safety, server-side rendering, and a responsive layout.",
+        "Implemented and maintained a reusable component library, improving development consistency and speed across the team."
+      ],
+      "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Figma", "Git"],
+      "projectLink": "https://clusta.co",
+      "githubLink": "https://github.com/picatech-intl/clusta_website",
+      "imageUrl": "/assets/projects-img/clusta.png",
+      "type": "professional"
+    },
+    {
+      "role": "Full-Stack Developer",
+      "entity": "HuntLedger.com",
+      "title": "Job Application Tracker",
+      "period": "2024 - Present",
+      "description": "Designed and developed a full-stack job application tracker from concept to production. The application helps job seekers organize their search, with automated reminders to ensure timely follow-ups. I owned the entire development lifecycle, from UI/UX design to deployment and backend logic.",
+      "achievements": [
+        "Engineered a responsive Next.js application with App Router for efficient routing and server-side rendering, improving SEO and initial load performance.",
+        "Implemented a full CRUD interface with Firebase Firestore for real-time data synchronization and Firebase Auth for secure user management.",
+        "Architected and built a custom scheduled task system (e.g., for email reminders) using a serverless approach, demonstrating strong backend problem-solving skills.",
+        "Styled the application with Tailwind CSS to create a clean, accessible, and modern user interface."
+      ],
+      "technologies": [
+        "Next.js",
+        "Firebase Firestore",
+        "Firebase Auth",
+        "Tailwind CSS",
+        "Git",
+        "JavaScript"
+      ],
+      "projectLink": "https://huntledger.com",
+      "githubLink": "https://github.com/engrfran6/huntledger",
+      "imageUrl": "/assets/projects-img/huntledger.png",
+      "type": "personal"
+    }
+  ],
+
+  "credentials": {
+    "certifications": [
+      {
+        "name": "Meta FrontEnd Developer Professional Certificate",
+        "issuer": "Coursera",
+        "date": "2023",
+        "logo": "/assets/certifictaion-logos/meta.png"
+      },
+      {
+        "name": "FrontEnd Developer (React)",
+        "issuer": "HackerRank",
+        "date": "2023",
+        "logo": "/assets/certifictaion-logos/hackerRank.jpg"
+      },
+      {
+        "name": "JavaScript Algorithm And Data Structure",
+        "issuer": "FreeCodeCamp",
+        "date": "2024",
+        "logo": "/assets/certifictaion-logos/freeCodeCamp.jpg"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Eng in Electrical & Computer Engineering",
+        "institution": "Delta State University",
+        "year": "2009-2013",
+        "logo": "/assets/certifictaion-logos/delsu.jpg"
+      }
+    ]
+  },
+  "technicalSkills": {
+    "languages": [
+      {"name": "HTML5", "imageUrl": "/assets/tools/html.svg"},
+      {"name": "CSS3", "imageUrl": "/assets/tools/css3.svg"},
+      {"name": "JavaScript", "imageUrl": "/assets/tools/javascript.svg"},
+      {"name": "TypeScript", "imageUrl": "/assets/tools/typescript.svg"}
+    ],
+    "frontend": [
+      {"name": "React", "imageUrl": "/assets/tools/reactjs.png"},
+      {"name": "Next.js", "imageUrl": "/assets/tools/nextjs.webp"},
+      {"name": "Redux", "imageUrl": "/assets/tools/redux.svg"},
+      {"name": "Recoil", "imageUrl": "/assets/tools/recoil.svg"},
+      {"name": "Tailwind CSS", "imageUrl": "/assets/tools/tailwindcss.svg"},
+      {"name": "Bootstrap", "imageUrl": "/assets/tools/bootstrap5.svg"},
+      {"name": "Styled Components", "imageUrl": "/assets/tools/styled-components.svg"}
+    ],
+    "backend": [
+      {"name": "Node.js", "imageUrl": "/assets/tools/nodejs.png"},
+      {"name": "Express.js", "imageUrl": "/assets/tools/expressjs.png"},
+      {"name": "REST APIs", "imageUrl": "/assets/tools/api.svg"},
+      {"name": "GraphQL", "imageUrl": "/assets/tools/graphql.svg"}
+    ],
+    "databases": [
+      {"name": "MongoDB", "imageUrl": "/assets/tools/mongodb.svg"},
+      {"name": "Firebase", "imageUrl": "/assets/tools/firebase.svg"},
+      {"name": "MySQL", "imageUrl": "/assets/tools/mysql.svg"}
+    ],
+    "tools": [
+      {"name": "Git", "imageUrl": "/assets/tools/git.svg"},
+      {"name": "GitHub", "imageUrl": "/assets/tools/github.svg"},
+      {"name": "Postman", "imageUrl": "/assets/tools/postman.svg"},
+      {"name": "Docker", "imageUrl": "/assets/tools/docker.svg"}
+    ],
+    "developmentConcepts": [
+      {"name": "Data Structures & Algorithms", "imageUrl": "/assets/tools/dsa.png"},
+      {"name": "Agile Methodologies", "imageUrl": "/assets/tools/agile.webp"},
+      {"name": "Responsive Design", "imageUrl": "/assets/tools/responsive-design.png"},
+      {"name": "Accessibility (a11y)", "imageUrl": "/assets/tools/accessibility.png"}
+    ],
+    "design": [
+      {"name": "UI & UX Design", "imageUrl": "/assets/tools/uiux.png"},
+      {"name": "Figma", "imageUrl": "/assets/tools/figma.png"},
+      {"name": "Design Systems", "imageUrl": "/assets/tools/design-systems.avif"},
+      {"name": "Prototyping", "imageUrl": "/assets/tools/prototyping.png"},
+      {"name": "User Testing", "imageUrl": "/assets/tools/user-testing.jpeg"}
+    ]
+  }
+}
