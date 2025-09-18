@@ -141,6 +141,35 @@
       "githubLink": "https://github.com/engrfran6/huntledger",
       "imageUrl": "/assets/projects-img/huntledger.png",
       "type": "personal"
+    },
+    {
+      "role": "Full-Stack Developer",
+      "entity": "Personal Project",
+      "title": "Developer Blog Platform",
+      "period": "2025",
+      "description": "Designed and built a full-stack developer blog platform with user authentication, image uploads, and a custom content management system. This project demonstrates a strong grasp of both frontend and backend development within the MERN ecosystem, along with integration of modern tooling for image handling and user management.",
+      "achievements": [
+        "Developed a blog platform using the MERN stack, with server-side rendered pages via Next.js for improved SEO and performance.",
+        "Integrated NextAuth for secure user authentication, allowing role-based access to protected routes like the admin dashboard.",
+        "Built custom API routes in Next.js for post creation, editing, and deletion, connecting seamlessly with a MongoDB backend.",
+        "Implemented image uploads using UploadThing with validation and storage handling, enabling users to upload blog thumbnails and content images.",
+        "Designed a clean and responsive UI using Tailwind CSS, optimized for readability and user engagement across devices."
+      ],
+      "technologies": [
+        "Next.js",
+        "MDX",
+        "MongoDB",
+        "NextAuth",
+        "Tailwind CSS",
+        "UploadThing",
+        "TypeScript",
+        "Vercel",
+        "Git"
+      ],
+      "projectLink": "https://blog-beta-three-17.vercel.app/",
+      "githubLink": "https://github.com/Engrfran6/Blog",
+      "imageUrl": "/assets/projects-img/blogwebsite.png",
+      "type": "personal"
     }
   ],
 
