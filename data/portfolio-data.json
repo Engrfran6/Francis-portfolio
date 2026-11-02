@@ -1,22 +1,22 @@
 {
   "meta": {
-    "title": "Francis Uloho Okpoluaefe | Product Designer",
+    "title": "Francis Okpoluaefe | Full-Stack Engineer",
     "description": "Portfolio website showcasing product design work and skills"
   },
   "personal": {
     "name": "Francis Okpoluaefe",
-    "title": "Frontend Engineer",
-    "location": "Phorthacourt, NG",
+    "title": "Full-stack Engineer",
+    "location": "Porthacourt, NG",
     "avatar": "/confident-professional.png",
     "email": "deulo.dev@gmail.com",
     "phone": "+234 (703) 868-9224",
-    "workingHours": "Monday - Friday, 9am - 5pm PST",
+    "workingHours": "Monday - Friday, 9am - 5pm WAT (UTC+1) - flexible on overlap",
     "availableForWork": true,
     "badges": ["React", "Next.js", "TypeScript", "Tailwind CSS", "UI/UX"],
     "social": [
       {
         "platform": "GitHub",
-        "url": "https://githum.com/engrfran6",
+        "url": "https://github.com/engrfran6",
         "icon": "Github"
       },
       {
@@ -26,24 +26,24 @@
       },
       {
         "platform": "Twitter",
-        "url": "https://x.com/deulodev",
+        "url": "https://x.com/engrfran6_dev",
         "icon": "Twitter"
       },
       {
         "platform": "Instagram",
-        "url": "https://instagram.com/code_with_deulo",
+        "url": "https://instagram.com/engrfran6",
         "icon": "Instagram"
       }
     ]
   },
   "about": {
-    "bio": "I am a Frontend Engineer passionate about transforming user-centric designs into functional, ethical, and inclusive digital experiences. With over 5 years of experience, I specialize in React, Next.js, and TypeScript and enjoy tackling complex problems from the UI all the way to the API, using my proficiency in the MERN stack (MongoDB, Express.js, Node.js) to build complete full-stack solutions.",
+    "bio": "I'm a full-stack engineer with 6 years of experience turning ideas into polished, production-ready products. I specialize in React, Next.js, and TypeScript on the frontend, and pair them with Node.js, NestJS, and PostgreSQL/Supabase on the backend, so I can own a feature from the UI all the way to the API and database. I'm currently building a cross-platform monorepo with NestJS, Next.js, and React Native, where web and mobile clients share one clean, secure backend.",
     "focus": [
-      "Building intuitive and accessible interfaces is a technical requirement, not just a design ideal",
-      "Collaborating closely with design teams to implement and maintain robust, scalable design systems",
-      "Advocating for the user throughout the development process to ensure performance and accessibility are never an afterthought"
+      "Owning features end-to-end, from interface and API design to database modeling and deployment",
+      "Building accessible, performant interfaces and treating them as engineering requirements, not afterthoughts",
+      "Collaborating with designers and backend teams on reusable component libraries and clean API boundaries, including role-based auth that works across web and mobile"
     ],
-    "storyhook": "I've leveraged these skills to build products like HuntLedger, a job application tracker, and contributed to Clusta.co, an estate management platform. You can explore these projects in detail below",
+    "storyhook": "I've applied these skills to products like HuntLedger, a job application tracker with automated follow-up reminders, and contributed to Clusta.co, an estate management platform built with a 4-person team. I'm now building a NestJS, Next.js, and React Native monorepo. You can explore these projects in detail below",
 
     "languages": [
       {
@@ -56,7 +56,13 @@
         "name": "Isoko",
         "proficiency": "Native",
         "level": 100,
-        "flag": "🇺🇸"
+        "flag": "🇳🇬"
+      },
+      {
+        "name": "Igbo",
+        "proficiency": "Advanced",
+        "level": 100,
+        "flag": "🇳🇬"
       }
     ],
     "interests": ["Design Systems", "Accessibility", "Typography", "Motion Design", "Photography"]
@@ -173,6 +179,87 @@
     }
   ],
 
+  "tobeupdated": [
+    {
+      "role": "Full-Stack Developer",
+      "entity": "Personal Project",
+      "title": "Meal Orchestration Platform",
+      "period": "2026 - Present",
+      "description": "Designing and building a cross-platform meal ordering and scheduling system as a monorepo, where a single NestJS API serves both a Next.js web client and a React Native mobile client. I own the full system: architecture, API design, database schema, and both frontends.",
+      "achievements": [
+        "Architected a monorepo with a shared NestJS API, a Next.js web app, and a React Native mobile app, keeping API boundaries clean so features can be added to either client independently.",
+        "Implemented role-based authentication and authorization that works consistently across web and mobile clients against the same backend.",
+        "Modeled and managed data in Supabase (PostgreSQL), covering multi-role ordering and scheduling workflows.",
+        "Built the web client with Next.js, TanStack Query, and shadcn/ui for reliable data fetching and a consistent component system."
+      ],
+      "technologies": [
+        "NestJS",
+        "Next.js",
+        "React Native",
+        "TypeScript",
+        "Supabase",
+        "TanStack Query",
+        "shadcn/ui",
+        "Git"
+      ],
+      "projectLink": "",
+      "githubLink": "https://github.com/engrfran6/REPLACE-WITH-REPO",
+      "imageUrl": "/assets/projects-img/meal-platform.png",
+      "type": "personal"
+    },
+    {
+      "role": "Full-Stack Developer",
+      "entity": "Personal Project",
+      "title": "Paid DM Platform",
+      "period": "2026 - Present",
+      "description": "Building a subscription-gated direct messaging platform where access to conversations is controlled by paid plans. I'm handling the full stack, from the interface to access control logic and real-time messaging.",
+      "achievements": [
+        "Implemented paid access control so messaging features are gated by subscription status.",
+        "Built real-time messaging on Supabase, with Next.js powering the interface and server-side logic.",
+        "Designed the data model and permissions for users, conversations, and subscription state."
+      ],
+      "technologies": ["Next.js", "Supabase", "TypeScript", "Tailwind CSS", "Git"],
+      "projectLink": "",
+      "githubLink": "https://github.com/engrfran6/REPLACE-WITH-REPO",
+      "imageUrl": "/assets/projects-img/dm-platform.png",
+      "type": "personal"
+    },
+    {
+      "role": "Full-Stack Developer",
+      "entity": "Personal Project",
+      "title": "CustomHub: Product Customization Platform",
+      "period": "2023 - 2024",
+      "description": "Designed and built an e-commerce platform for personalized apparel, drinkware, and office accessories. Customers design their own products in a responsive live-preview tool and check out through an integrated Stripe payment flow.",
+      "achievements": [
+        "Built a responsive product customization tool that lets users personalize apparel, drinkware, and office products with a live preview.",
+        "Integrated Stripe to handle secure checkout and payments end-to-end.",
+        "Styled the interface with Tailwind CSS for a clean experience across mobile and desktop."
+      ],
+      "technologies": ["React", "Tailwind CSS", "Stripe", "JavaScript", "Vercel", "Git"],
+      "projectLink": "https://deulo.vercel.app",
+      "githubLink": "https://github.com/engrfran6/REPLACE-WITH-REPO",
+      "imageUrl": "/assets/projects-img/customhub.png",
+      "type": "personal"
+    },
+    {
+      "role": "Frontend Developer",
+      "entity": "Personal Project",
+      "title": "Banking Dashboard",
+      "period": "2023",
+      "description": "Developed a responsive financial data visualization dashboard with Next.js and TypeScript, with automated deployments through a CI/CD pipeline.",
+      "achievements": [
+        "Built a dynamic, responsive dashboard presenting financial data in a clear, scannable layout.",
+        "Set up automated CI/CD deployment pipelines with GitHub Actions, so every merge ships without manual steps.",
+        "Used TypeScript throughout for type safety across components and data handling."
+      ],
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Actions", "Git"],
+      "projectLink": "",
+      "githubLink": "https://github.com/engrfran6/REPLACE-WITH-REPO",
+      "imageUrl": "/assets/projects-img/banking-dashboard.png",
+      "type": "personal"
+    }
+  ],
+
   "credentials": {
     "certifications": [
       {
@@ -213,30 +300,42 @@
     "frontend": [
       {"name": "React", "imageUrl": "/assets/tools/reactjs.png"},
       {"name": "Next.js", "imageUrl": "/assets/tools/nextjs.webp"},
+      {"name": "React Native", "imageUrl": "/assets/tools/react-native.svg"},
+      {"name": "Tailwind CSS", "imageUrl": "/assets/tools/tailwindcss.svg"},
+      {"name": "shadcn/ui", "imageUrl": "/assets/tools/shadcn.svg"},
+      {"name": "Zustand", "imageUrl": "/assets/tools/zustand.svg"},
+      {"name": "TanStack Query", "imageUrl": "/assets/tools/tanstack-query.svg"},
       {"name": "Redux", "imageUrl": "/assets/tools/redux.svg"},
       {"name": "Recoil", "imageUrl": "/assets/tools/recoil.svg"},
-      {"name": "Tailwind CSS", "imageUrl": "/assets/tools/tailwindcss.svg"},
       {"name": "Bootstrap", "imageUrl": "/assets/tools/bootstrap5.svg"},
       {"name": "Styled Components", "imageUrl": "/assets/tools/styled-components.svg"}
     ],
     "backend": [
       {"name": "Node.js", "imageUrl": "/assets/tools/nodejs.png"},
+      {"name": "NestJS", "imageUrl": "/assets/tools/nestjs.svg"},
       {"name": "Express.js", "imageUrl": "/assets/tools/expressjs.png"},
-      {"name": "REST APIs", "imageUrl": "/assets/tools/api.svg"},
-      {"name": "GraphQL", "imageUrl": "/assets/tools/graphql.svg"}
+      {"name": "Fastify", "imageUrl": "/assets/tools/fastify.svg"},
+      {"name": "REST APIs", "imageUrl": "/assets/tools/api.svg"}
     ],
     "databases": [
-      {"name": "MongoDB", "imageUrl": "/assets/tools/mongodb.svg"},
+      {"name": "PostgreSQL", "imageUrl": "/assets/tools/postgresql.svg"},
+      {"name": "Supabase", "imageUrl": "/assets/tools/supabase.svg"},
       {"name": "Firebase", "imageUrl": "/assets/tools/firebase.svg"},
+      {"name": "MongoDB", "imageUrl": "/assets/tools/mongodb.svg"},
       {"name": "MySQL", "imageUrl": "/assets/tools/mysql.svg"}
     ],
     "tools": [
       {"name": "Git", "imageUrl": "/assets/tools/git.svg"},
       {"name": "GitHub", "imageUrl": "/assets/tools/github.svg"},
+      {"name": "GitHub Actions (CI/CD)", "imageUrl": "/assets/tools/github-actions.svg"},
+      {"name": "Stripe", "imageUrl": "/assets/tools/stripe.svg"},
+      {"name": "Vercel", "imageUrl": "/assets/tools/vercel.svg"},
       {"name": "Postman", "imageUrl": "/assets/tools/postman.svg"},
       {"name": "Docker", "imageUrl": "/assets/tools/docker.svg"}
     ],
     "developmentConcepts": [
+      {"name": "Monorepo Architecture", "imageUrl": "/assets/tools/monorepo.png"},
+      {"name": "Authentication & Role-Based Access", "imageUrl": "/assets/tools/auth.png"},
       {"name": "Data Structures & Algorithms", "imageUrl": "/assets/tools/dsa.png"},
       {"name": "Agile Methodologies", "imageUrl": "/assets/tools/agile.webp"},
       {"name": "Responsive Design", "imageUrl": "/assets/tools/responsive-design.png"},
